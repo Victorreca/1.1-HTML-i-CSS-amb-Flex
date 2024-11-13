@@ -4,7 +4,6 @@
 .max-width-1200 {
   max-width: 1200px;
   padding: var(--twenty-px);
-  margin: 0 auto;
 }
 
 h1 {
@@ -104,4 +103,19 @@ header {
 .column-second span {
   padding: var(--ten-px);
   background-color: var(--main-color-yellow);
+}
+
+/*********************/
+/****** Footer *******/
+/*********************/
+footer {
+  margin-top: var(--twenty-px);
+  background-color: var(--main-color-black);
+  color: red;
+}
+.pie {
+  background-color: var(--main-color-yellow);
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 10px;
 }
