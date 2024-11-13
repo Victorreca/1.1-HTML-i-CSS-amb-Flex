@@ -1,5 +1,11 @@
 :root {
-  --main-color-blue: blue;
+  --main-color-black: black;
+  --main-color-blue: #0000ff;
+  --main-color-blue-light: #00ffe1;
   --main-color-red: red;
   --main-color-grey: grey;
+  --main-color-orange: orange;
+  --main-color-yellow: yellow;
+  --twenty-px: 20px;
+  --ten-px: 10px;
 }

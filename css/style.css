@@ -3,7 +3,7 @@
 
 .max-width-1200 {
   max-width: 1200px;
-  padding: 0 20px;
+  padding: var(--twenty-px);
   margin: 0 auto;
 }
 
@@ -14,13 +14,16 @@ h1 {
 /*********************/
 /****** Header *******/
 /*********************/
+header {
+  background-color: var(--main-color-black);
+}
+
+/*** First header ***/
 .header-first {
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  padding: 20px 40px;
-  gap: 20px;
+  padding: var(--twenty-px) 40px;
+  gap: var(--twenty-px);
   justify-content: center;
   background-color: var(--main-color-grey);
 }
@@ -32,5 +35,73 @@ h1 {
 .logo,
 .nav,
 .social {
-  padding: 10px;
+  padding: var(--ten-px);
+}
+
+/*** Second header ***/
+.header-second {
+  margin-top: var(--twenty-px);
+  display: grid;
+  grid-template-columns: 100%;
+  padding: var(--twenty-px);
+  gap: var(--twenty-px);
+  justify-content: center;
+  background-color: var(--main-color-orange);
+}
+
+.header-second div {
+  background-color: var(--main-color-yellow);
+}
+.banner {
+  padding: var(--ten-px);
+}
+
+/*********************/
+/*** First Section ***/
+/*********************/
+.section-first {
+  display: grid;
+  margin-top: var(--twenty-px);
+  grid-template-columns: 80% 20%;
+  background-color: var(--main-color-black);
+}
+
+.column-first {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: var(--twenty-px);
+  gap: var(--twenty-px);
+  background-color: var(--main-color-grey);
+  margin-right: 20px;
+  padding-right: 40px;
+}
+.first-article,
+.second-article,
+.third-article,
+.fourth-article,
+.navegacion {
+  padding: var(--ten-px);
+}
+.navegacion {
+  grid-column: span 2;
+  background-color: var(--main-color-blue-light);
+}
+.first-article,
+.second-article,
+.third-article,
+.fourth-article {
+  background-color: var(--main-color-blue);
+}
+
+.column-second {
+  background-color: var(--main-color-red);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25%;
+  padding: var(--twenty-px);
+  gap: var(--ten-px);
+}
+.column-second span {
+  padding: var(--ten-px);
+  background-color: var(--main-color-yellow);
 }
