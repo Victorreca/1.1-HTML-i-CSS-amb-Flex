@@ -20,8 +20,8 @@ header {
 /*** First header ***/
 .header-first {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-  padding: var(--twenty-px) 40px;
+  grid-template-columns: 100%;
+  padding: var(--twenty-px) var(--twenty-px);
   gap: var(--twenty-px);
   justify-content: center;
   background-color: var(--main-color-grey);
@@ -61,18 +61,17 @@ header {
 .section-first {
   display: grid;
   margin-top: var(--twenty-px);
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 100%;
   background-color: var(--main-color-black);
 }
 
 .column-first {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   padding: var(--twenty-px);
   gap: var(--twenty-px);
   background-color: var(--main-color-grey);
-  margin-right: 20px;
-  padding-right: 40px;
+  /* padding-right: 40px; */
 }
 .first-article,
 .second-article,
@@ -82,7 +81,7 @@ header {
   padding: var(--ten-px);
 }
 .navegacion {
-  grid-column: span 2;
+  grid-column: 1;
   background-color: var(--main-color-blue-light);
 }
 .first-article,
@@ -96,13 +95,44 @@ header {
   background-color: var(--main-color-red);
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 25% 25%;
   padding: var(--twenty-px);
   gap: var(--ten-px);
 }
 .column-second span {
   padding: var(--ten-px);
   background-color: var(--main-color-yellow);
+}
+
+@media (min-width: 1200px) {
+  .header-first {
+    grid-template-columns: 20% 60% 20%;
+    padding: var(--twenty-px) 40px;
+  }
+  .section-first {
+    margin-top: var(--twenty-px);
+    grid-template-columns: 80% 20%;
+    background-color: var(--main-color-black);
+  }
+  .column-first {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: var(--twenty-px);
+    gap: var(--twenty-px);
+    background-color: var(--main-color-grey);
+    margin-right: 20px;
+    padding-right: 40px;
+  }
+  .navegacion {
+    grid-column: span 2;
+  }
+  .column-second {
+    background-color: var(--main-color-red);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25%;
+    padding: var(--twenty-px);
+    gap: var(--ten-px);
+  }
 }
 
 /*********************/
