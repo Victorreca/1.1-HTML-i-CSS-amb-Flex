@@ -1,6 +1,10 @@
 @import "globalstyle.css";
 @import "variables.css";
 
+body {
+  background-color: var(--main-color-purple);
+}
+
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -106,6 +110,10 @@ header {
 }
 
 @media (min-width: 768px) {
+  body {
+    background-color: var(--main-color-pink);
+  }
+
   .column-first {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -120,6 +128,9 @@ header {
 }
 
 @media (min-width: 1200px) {
+  body {
+    background-color: var(--main-color-green);
+  }
   .header-first {
     grid-template-columns: 20% 60% 20%;
     padding: var(--twenty-px) 40px;
