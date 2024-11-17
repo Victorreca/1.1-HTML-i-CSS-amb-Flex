@@ -174,3 +174,40 @@ footer {
   grid-template-columns: 100%;
   padding: 10px;
 }
+
+/*** Animation Logo ***/
+.logo {
+  cursor: pointer;
+  transform: scale(1);
+  background-color: var(--main-color-red);
+}
+
+.logo:hover {
+  animation-name: logoanimation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logoanimation {
+  0% {
+    background-color: var(--main-color-red);
+    transform: scale(1);
+  }
+  100% {
+    background-color: var(--main-color-pink);
+    transform: scale(1.2);
+  }
+}
+
+/* Otra manera de hacerlo */
+/* .logo {
+  cursor: pointer;
+  background-color: var(--main-color-red);
+  transform: scale(1); 
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.logo:hover {
+  background-color: var(--main-color-pink); 
+  transform: scale(1.2); 
+} */
