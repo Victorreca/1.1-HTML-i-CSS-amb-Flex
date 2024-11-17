@@ -1,11 +1,13 @@
 @import "globalstyle.css";
 @import "variables.css";
 
-.max-width-1200 {
+.main-container {
   max-width: 1200px;
+  margin: 0 auto;
+}
+.px-20 {
   padding: var(--twenty-px);
 }
-
 h1 {
   color: var(--main-color-blue);
 }
@@ -71,7 +73,7 @@ header {
   padding: var(--twenty-px);
   gap: var(--twenty-px);
   background-color: var(--main-color-grey);
-  /* padding-right: 40px; */
+  margin-bottom: 20px;
 }
 .first-article,
 .second-article,
@@ -103,6 +105,20 @@ header {
   background-color: var(--main-color-yellow);
 }
 
+@media (min-width: 768px) {
+  .column-first {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: var(--twenty-px);
+    gap: var(--twenty-px);
+    background-color: var(--main-color-grey);
+    padding-right: 40px;
+  }
+  .navegacion {
+    grid-column: span 2;
+  }
+}
+
 @media (min-width: 1200px) {
   .header-first {
     grid-template-columns: 20% 60% 20%;
@@ -121,9 +137,7 @@ header {
     background-color: var(--main-color-grey);
     margin-right: 20px;
     padding-right: 40px;
-  }
-  .navegacion {
-    grid-column: span 2;
+    margin-bottom: 0;
   }
   .column-second {
     background-color: var(--main-color-red);
