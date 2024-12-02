@@ -196,6 +196,19 @@ footer {
   }
   100% {
     background-color: var(--main-color-pink);
-    transform: scale(1.2);
+    transform: scale(1.05);
+  }
+}
+
+@media (min-width: 1200px) {
+  @keyframes logoanimation {
+    0% {
+      background-color: var(--main-color-red);
+      transform: scale(1);
+    }
+    100% {
+      background-color: var(--main-color-pink);
+      transform: scale(1.2);
+    }
   }
 }
