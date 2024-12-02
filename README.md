@@ -13,3 +13,7 @@ En aquesta pràctica hauràs de fer un Layout que ha de funcionar tant en escrip
 
 - Crear repositori GitHub
 - Maquetació responsive
+
+## Instalación
+
+git clone https://github.com/Victorreca/1.1-HTML-i-CSS-amb-Flex.git
